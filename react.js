@@ -15,9 +15,9 @@ class LighteningCounter extends React.Component {
   componentDidMount(){
     setInterval(this.timerTick, 1000);
   }
-  let count = this.state.strikes.toLocaleString();
+ 
   render(){
-    return(<h1>{count}</h1>)
+    return(<h1>{this.state.strikes}</h1>)
   }
 }
 
